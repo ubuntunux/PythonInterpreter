@@ -1,0 +1,26 @@
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/mataeoh/.kivy/logs/kivy_15-11-02_3.txt
+[[1;32mINFO[0m   ] [Kivy        ] v1.9.0
+[[1;32mINFO[0m   ] [Python      ] v2.7.6 (default, Jun 22 2015, 17:58:13) 
+[GCC 4.8.2]
+[[1;32mINFO[0m   ] [Factory     ] 173 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_gif, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Clipboard   ] Provider: gtk3(['clipboard_dbusklipper'] ignored)
+[[1;32mINFO[0m   ] [OSC         ] using <multiprocessing> for socket
+[[1;32mINFO[0m   ] [Window      ] Provider: sdl2(['window_egl_rpi'] ignored)
+[[1;32mINFO[0m   ] [GL          ] OpenGL version <4.5.0 NVIDIA 349.12>
+[[1;32mINFO[0m   ] [GL          ] OpenGL vendor <NVIDIA Corporation>
+[[1;32mINFO[0m   ] [GL          ] OpenGL renderer <GeForce GTX 660/PCIe/SSE2>
+[[1;32mINFO[0m   ] [GL          ] OpenGL parsed version: 4, 5
+[[1;32mINFO[0m   ] [GL          ] Shading version <4.50 NVIDIA>
+[[1;32mINFO[0m   ] [GL          ] Texture max size <16384>
+[[1;32mINFO[0m   ] [GL          ] Texture max units <32>
+[[1;32mINFO[0m   ] [Window      ] auto add sdl2 input provider
+[[1;32mINFO[0m   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+[[1;32mINFO[0m   ] [AudioGstplayer] Using Gstreamer 1.2.4.0
+[[1;32mINFO[0m   ] [Audio       ] Providers: audio_gstplayer, audio_sdl2 (audio_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Text        ] Provider: sdl2
+[[1;33mWARNING[0m] Call to deprecated function __call__ in /usr/lib/python2.7/dist-packages/kivy/utils.py line 251.Called from /home/mataeoh/Work/Python_Interpreter/Utility.py line 67 by <module>().
+[[1;32mINFO[0m   ] [Base        ] Start application main loop
+[[1;32mINFO[0m   ] [GL          ] NPOT texture support is available
+[[1;33mWARNING[0m] Call to deprecated function __call__ in /usr/lib/python2.7/dist-packages/kivy/utils.py line 251.Called from /home/mataeoh/Work/Python_Interpreter/toast/__init__.py line 10 by _get_ref().
+[[1;32mINFO[0m   ] [Base        ] Leaving application in progress...

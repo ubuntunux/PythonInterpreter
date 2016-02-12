@@ -1,0 +1,10 @@
+Comment
+[code]
+# This is one line comment.
+
+'''
+This is multiline comments.
+We are in a comment.
+We are still in a comment.
+'''
+[/code]

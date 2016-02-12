@@ -1,0 +1,19 @@
+Number
+[code]
+>>> 2 + 2 # add
+4
+>>> 20 - 5 # subtract
+15
+>>> 8 / 5.0 # divide : int / float -> float
+1.6
+>>> 17 / 3  # divid : int / int -> int
+5
+>>> 17 // 3.0  # explicit floor division discards the fractional part
+5.0
+>>> 17 % 3  # the % operator returns the remainder of the division
+2
+>>> 5 ** 2  # 5 squared
+25
+>>> 2 ** 7  # 2 to the power of 7
+128
+[/code]

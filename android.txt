@@ -1,0 +1,3 @@
+title=Python
+author=EnuriSoft
+orientation=portrait

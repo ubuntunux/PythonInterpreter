@@ -1,0 +1,65 @@
+String
+
+Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes ("...") with the same result. \ can be used to escape quotes:
+>>>
+>>> 'spam eggs'  # single quotes
+'spam eggs'
+>>> 'doesn\'t'  # use \' to escape the single quote...
+"doesn't"
+>>> "doesn't"  # ...or use double quotes instead
+"doesn't"
+>>> '"Yes," he said.'
+'"Yes," he said.'
+>>> "\"Yes,\" he said."
+'"Yes," he said.'
+>>> '"Isn\'t," she said.'
+'"Isn\'t," she said.'
+In the interactive interpreter, the output string is enclosed in quotes and special characters are escaped with backslashes. While this might sometimes look different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes, otherwise it is enclosed in single quotes. The print statement produces a more readable output, by omitting the enclosing quotes and by printing escaped and special characters:
+>>>
+>>> '"Isn\'t," she said.'
+'"Isn\'t," she said.'
+>>> print '"Isn\'t," she said.'
+"Isn't," she said.
+>>> s = 'First line.\nSecond line.'  # \n means newline
+>>> s  # without print, \n is included in the output
+'First line.\nSecond line.'
+>>> print s  # with print, \n produces a new line
+First line.
+Second line.
+If you don’t want characters prefaced by \ to be interpreted as special characters, you can use raw strings by adding an r before the first quote:
+>>>
+>>> print 'C:\some\name'  # here \n means newline!
+C:\some
+ame
+>>> print r'C:\some\name'  # note the r before the quote
+C:\some\name
+
+>>> word[42]  # the word only has 6 characters
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+However, out of range slice indexes are handled gracefully when used for slicing:
+>>>
+>>> word[4:42]
+'on'
+>>> word[42:]
+''
+Python strings cannot be changed — they are immutable. Therefore, assigning to an indexed position in the string results in an error:
+>>>
+>>> word[0] = 'J'
+  ...
+TypeError: 'str' object does not support item assignment
+>>> word[2:] = 'py'
+  ...
+TypeError: 'str' object does not support item assignment
+If you need a different string, you should create a new one:
+>>>
+>>> 'J' + word[1:]
+'Jython'
+>>> word[:2] + 'py'
+'Pypy'
+The built-in function len() returns the length of a string:
+>>>
+>>> s = 'supercalifragilisticexpialidocious'
+>>> len(s)
+34

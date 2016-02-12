@@ -1,0 +1,8 @@
+.idea
+.ropeproject
+.settings
+*.log
+*.pyc
+*.py~
+*.pyo
+*.swp
