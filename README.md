@@ -3,13 +3,13 @@
 GooglePlay : https://play.google.com/store/apps/details?id=enurisoft.com.pythoninterpreter
 SourceCode : https://github.com/terrorgun/Python_Interpreter
 
-This is Python interpreter for Android.
-This is Python REPL.
-This is Python IDE and contain some tutorial.
+This is Python interpreter for Android.  
+This is Python REPL.  
+This is Python IDE and contain some tutorial.  
 
-This offers a great learning experience for Python beginners.
-It is written in python using the Kivy framework. (http://kivy.org)
-Kivy is cross platform greate NUI framwork.
+This offers a great learning experience for Python beginners.  
+It is written in python using the Kivy framework. (http://kivy.org)  
+Kivy is cross platform greate NUI framwork.  
 
 You can test kivy like this.
 
