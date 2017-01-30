@@ -13,16 +13,16 @@ Kivy is cross platform greate NUI framwork.
 
 You can test kivy like this.
 
-\# import kivy modules
-import kivy
-from kivy.core.window import Window
-from kivy.uix.button import Button
+  # import kivy modules
+  import kivy
+  from kivy.core.window import Window
+  from kivy.uix.button import Button
 
-\# get root
-root = Window.get_parent_window()
+  # get root
+  root = Window.get_parent_window()
 
-\# creat button
-btn = Button(text="button test", pos=(200,500), size_hint=(None, None), size=(300,150))
+  # creat button
+  btn = Button(text="button test", pos=(200,500), size_hint=(None, None), size=(300,150))
 
-\# show button
-root.add_widget(btn)
+  # show button
+  root.add_widget(btn)
