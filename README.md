@@ -13,6 +13,7 @@ Kivy is cross platform greate NUI framwork.
 
 You can test kivy like this.
 
+'''
   # import kivy modules
   import kivy
   from kivy.core.window import Window
@@ -26,3 +27,4 @@ You can test kivy like this.
 
   # show button
   root.add_widget(btn)
+'''
