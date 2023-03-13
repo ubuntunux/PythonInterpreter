@@ -1,26 +1,64 @@
-[[1;32mINFO[0m   ] [Logger      ] Record log in /home/mataeoh/.kivy/logs/kivy_15-11-02_3.txt
-[[1;32mINFO[0m   ] [Kivy        ] v1.9.0
-[[1;32mINFO[0m   ] [Python      ] v2.7.6 (default, Jun 22 2015, 17:58:13) 
-[GCC 4.8.2]
-[[1;32mINFO[0m   ] [Factory     ] 173 symbols loaded
-[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_gif, img_sdl2, img_pil (img_ffpyplayer ignored)
-[[1;32mINFO[0m   ] [Clipboard   ] Provider: gtk3(['clipboard_dbusklipper'] ignored)
-[[1;32mINFO[0m   ] [OSC         ] using <multiprocessing> for socket
-[[1;32mINFO[0m   ] [Window      ] Provider: sdl2(['window_egl_rpi'] ignored)
-[[1;32mINFO[0m   ] [GL          ] OpenGL version <4.5.0 NVIDIA 349.12>
-[[1;32mINFO[0m   ] [GL          ] OpenGL vendor <NVIDIA Corporation>
-[[1;32mINFO[0m   ] [GL          ] OpenGL renderer <GeForce GTX 660/PCIe/SSE2>
-[[1;32mINFO[0m   ] [GL          ] OpenGL parsed version: 4, 5
-[[1;32mINFO[0m   ] [GL          ] Shading version <4.50 NVIDIA>
-[[1;32mINFO[0m   ] [GL          ] Texture max size <16384>
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/ubuntunux/.kivy/logs/kivy_23-03-12_20.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.1.0
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/ubuntunux/anaconda3/envs/javis/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.9 (main, Mar  8 2023, 10:47:38) [GCC 11.2.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/home/ubuntunux/anaconda3/envs/javis/bin/python"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 189 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2 (img_pil, img_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Clipboard   ] Provider: sdl2(['clipboard_xclip', 'clipboard_xsel', 'clipboard_dbusklipper', 'clipboard_gtk3'] ignored)
+[[1;31mCRITICAL[0m] [Cutbuffer   ] Unable to find any valuable Cutbuffer provider. Please enable debug logging (e.g. add -d if running from the command line, or change the log level in the config) and re-run your app to identify potential causes
+xclip - FileNotFoundError: [Errno 2] No such file or directory: 'xclip'
+  File "/home/ubuntunux/anaconda3/envs/javis/lib/python3.10/site-packages/kivy/core/__init__.py", line 59, in core_select_lib
+    mod = importlib.__import__(name='{2}.{0}.{1}'.format(
+  File "<frozen importlib._bootstrap>", line 1129, in __import__
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntunux/anaconda3/envs/javis/lib/python3.10/site-packages/kivy/core/clipboard/clipboard_xclip.py", line 17, in <module>
+    p = subprocess.Popen(['xclip', '-version'], stdout=subprocess.PIPE,
+  File "/home/ubuntunux/anaconda3/envs/javis/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/ubuntunux/anaconda3/envs/javis/lib/python3.10/subprocess.py", line 1847, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+
+xsel - FileNotFoundError: [Errno 2] No such file or directory: 'xsel'
+  File "/home/ubuntunux/anaconda3/envs/javis/lib/python3.10/site-packages/kivy/core/__init__.py", line 59, in core_select_lib
+    mod = importlib.__import__(name='{2}.{0}.{1}'.format(
+  File "<frozen importlib._bootstrap>", line 1129, in __import__
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntunux/anaconda3/envs/javis/lib/python3.10/site-packages/kivy/core/clipboard/clipboard_xsel.py", line 16, in <module>
+    p = subprocess.Popen(['xsel'], stdout=subprocess.PIPE)
+  File "/home/ubuntunux/anaconda3/envs/javis/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/ubuntunux/anaconda3/envs/javis/lib/python3.10/subprocess.py", line 1847, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+
+[[1;32mINFO[0m   ] [Window      ] Provider: sdl2
+[[1;32mINFO[0m   ] [GL          ] Using the "OpenGL" graphics system
+[[1;32mINFO[0m   ] [GL          ] Backend used <sdl2>
+[[1;32mINFO[0m   ] [GL          ] OpenGL version <b'4.6.0 NVIDIA 525.85.05'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL vendor <b'NVIDIA Corporation'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL renderer <b'NVIDIA GeForce RTX 2070/PCIe/SSE2'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL parsed version: 4, 6
+[[1;32mINFO[0m   ] [GL          ] Shading version <b'4.60 NVIDIA'>
+[[1;32mINFO[0m   ] [GL          ] Texture max size <32768>
 [[1;32mINFO[0m   ] [GL          ] Texture max units <32>
 [[1;32mINFO[0m   ] [Window      ] auto add sdl2 input provider
 [[1;32mINFO[0m   ] [Window      ] virtual keyboard not allowed, single mode, not docked
-[[1;32mINFO[0m   ] [AudioGstplayer] Using Gstreamer 1.2.4.0
-[[1;32mINFO[0m   ] [Audio       ] Providers: audio_gstplayer, audio_sdl2 (audio_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Audio       ] Providers: audio_sdl2 (audio_ffpyplayer ignored)
 [[1;32mINFO[0m   ] [Text        ] Provider: sdl2
-[[1;33mWARNING[0m] Call to deprecated function __call__ in /usr/lib/python2.7/dist-packages/kivy/utils.py line 251.Called from /home/mataeoh/Work/Python_Interpreter/Utility.py line 67 by <module>().
 [[1;32mINFO[0m   ] [Base        ] Start application main loop
 [[1;32mINFO[0m   ] [GL          ] NPOT texture support is available
-[[1;33mWARNING[0m] Call to deprecated function __call__ in /usr/lib/python2.7/dist-packages/kivy/utils.py line 251.Called from /home/mataeoh/Work/Python_Interpreter/toast/__init__.py line 10 by _get_ref().
+[[1;33mWARNING[0m] Deprecated property "<VariableListProperty name=padding_x>" of object "<PyInterpreter.Editor.Editor object at 0x7f0beb855c40>" has been set, it will be removed in a future version
+[[1;33mWARNING[0m] Deprecated property "<VariableListProperty name=padding_y>" of object "<PyInterpreter.Editor.Editor object at 0x7f0beb855c40>" has been set, it will be removed in a future version
 [[1;32mINFO[0m   ] [Base        ] Leaving application in progress...

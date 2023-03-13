@@ -1,8 +1,14 @@
+import traceback
 import Utility as Util
 from Utility import *
-
 from PyInterpreter import PyInterpreter
-    
+
 if __name__ == '__main__':
-  gMyRoot.show_debug(False)
-  gMyRoot.run( PyInterpreter.instance() )
+  try:
+    gMyRoot.show_debug(False)
+    instance = PyInterpreter.PyInterpreter.instance()
+    gMyRoot.run( instance )
+  except:
+    print(traceback.format_exc())
+
+

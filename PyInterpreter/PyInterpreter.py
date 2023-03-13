@@ -1,14 +1,15 @@
-import Utility as Util
-from Utility import *
+from glob import glob
+from io import StringIO
 from kivy.uix.carousel import Carousel
 
-from glob import glob
+import Utility as Util
+from Utility import *
 
-from Tutorial import TutorialLayout
-from Editor import EditorLayout
-from FileBrowser import FileBrowser
+from .Tutorial import TutorialLayout
+from .Editor import EditorLayout
+from .FileBrowser import FileBrowser
+from .Constants import *
 
-from Constants import *
 
 #---------------------#
 # CLASS : REPL
@@ -60,13 +61,13 @@ class REPL(Singleton):
       self.old_stdout = sys.stdout
       self.redirected_output = sys.stdout = StringIO()
       try:
-        print eval(code, self.myGlobals)
+        print(eval(code, self.myGlobals))
       except:
         exec(code, self.myGlobals)
         
       sys.stdout = self.old_stdout
       self.result = self.redirected_output.getvalue()
-    except Exception, e:
+    except Exception as e:
       self.errorstring = traceback.format_exc()
       self.result = ("ERROR: " + self.errorstring)
     return self.result[:-1]
@@ -81,7 +82,7 @@ class PyInterpreter(Singleton):
   prevMode = ""
   currentMode = "" # console, tutorial, editor
   emptyWidget = Widget(size_hint=(None,None), size=(0,0))
-  
+
   def init(self):
     if self.isInit:
       return
@@ -126,8 +127,8 @@ class PyInterpreter(Singleton):
     self.screen.add_widget(self.screenMenuLayout)
     
     # text input
-    self.consoleInput = TextInput(text = "text", multiline=False, size_hint=(None, None), auto_indent = True, font_name=defaultFont, 
-      background_color=(.1, .1, .1, 1), foreground_color=(1,1,1,1), text_size=(0,0), font_size="14dp", padding_x="20dp", padding_y="15dp")  
+    self.consoleInput = TextInput(text="text", multiline=False, size_hint=(None, None), auto_indent = True, font_name=defaultFont,
+      background_color=(.1, .1, .1, 1), foreground_color=(1,1,1,1), font_size="14dp", padding_x="20dp", padding_y="15dp")
     self.consoleInput.size = (W, self.consoleInput.minimum_height)
     self.consoleInput.text = ""
     '''
@@ -233,7 +234,7 @@ class PyInterpreter(Singleton):
     if type(text) != str:
       text = str(text)
        
-    output = TextInput(markup = True, text="", halign='left', valign='top', readonly=True, font_size="12dp", font_name = defaultFont,
+    output = TextInput(text="", halign='left', readonly=True, font_size="12dp", font_name = defaultFont,
       multiline=True, background_color=background_color, foreground_color=(1,1,1,1), size_hint=(None,None), size = (self.outputWidth, 0))
     output.text = text
     output.size = (self.outputWidth, output.minimum_height)

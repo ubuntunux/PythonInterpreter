@@ -1,8 +1,10 @@
+import traceback
+
 import Utility as Util
 from Utility import *
 
-from Constants import *
-import traceback
+from .Constants import *
+
 
 global gFileBrowser
 

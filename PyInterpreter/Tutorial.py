@@ -1,7 +1,7 @@
 import Utility as Util
 from Utility import *
 
-from Constants import *
+from .Constants import *
 from collections import OrderedDict
 
 #---------------------#

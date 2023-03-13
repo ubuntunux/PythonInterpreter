@@ -1,10 +1,10 @@
 import Utility as Util
 from Utility import *
 
-import ConfigParser, tempfile, traceback
+import configparser, tempfile, traceback
 from glob import glob
 
-from Constants import *
+from .Constants import *
 from collections import OrderedDict
 from pygments.lexers import CythonLexer
 from toast import toast
@@ -126,7 +126,7 @@ class EditorLayout():
     self.screen = Screen(name = szEditor)
     # document list
     height = kivy.metrics.dp(45)
-    self.documentTitleSV = ScrollView(orientation="horizontal", size_hint=(None, None), size=(W, height), pos=(0, H-height))
+    self.documentTitleSV = ScrollView(size_hint=(None, None), size=(W, height), pos=(0, H-height))
     self.documentTitleLayout = BoxLayout(size_hint=(None, 1))
     self.documentTitleSV.add_widget(self.documentTitleLayout)
     self.screen.add_widget(self.documentTitleSV)
@@ -198,7 +198,7 @@ class EditorLayout():
   def load_config(self):
     if not os.path.isfile(configFile):
       return
-    parser = ConfigParser.SafeConfigParser()
+    parser = configparser.Safeconfigparser()
     parser.read(configFile)
     
     # load document section
@@ -229,7 +229,7 @@ class EditorLayout():
   def save_config(self):
     # make section
     if len(self.documentMap) > 0:
-      parser = ConfigParser.SafeConfigParser()
+      parser = configparser.Safeconfigparser()
       doc_section = "Documents"
       temp_section = "Tempfiles"
       parser.add_section(doc_section)
